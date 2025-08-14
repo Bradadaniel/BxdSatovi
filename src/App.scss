@@ -22,6 +22,11 @@
 body{
   overflow-x: hidden;
 }
+@media (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+}
 
 //SPINNER
 .loader {

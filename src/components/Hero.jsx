@@ -24,7 +24,7 @@ export default function Hero() {
           loop={true}
           autoplay={{ delay: 3000 }}
           spaceBetween={1}
-          slidesPerView={0.9}
+          slidesPerView={1.9}
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
         >
           {items.slice(0, 4).map((slide, index) => (
