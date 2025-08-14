@@ -25,7 +25,7 @@ export default function BlogContent() {
 
   return (
     <div className="blog-content">
-      <div className="title" data-aos="fade-left">
+      <div className="title" data-aos="fade-up">
         <h1>Blog Sajt</h1>
       </div>
       <div className="box" data-aos="fade-up">

@@ -251,7 +251,7 @@ const items = [
   model: "smart-watch",
   caseMaterial: "Kućište od plastike",
   bandMaterial: "Kaiš od silikona",
-  movement: "Digitalni mehanizam",
+  movement: "Pametni sat",
   caseDiameter: "47.5mm",
   caseThickness: "10.5mm",
   bandWidth: "22mm",
