@@ -136,6 +136,12 @@ header {
           padding: 10px 0;
           font-size: 1rem;
           border: none;
+          box-shadow: 0 1.5px 0 rgba(0, 0, 0, 0.7);
+          width: 50%;
+          text-align: center;
+          &:hover{
+            width: 100%;
+          }
         }
 
         img {
