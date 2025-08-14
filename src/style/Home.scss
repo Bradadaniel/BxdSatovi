@@ -84,11 +84,11 @@
     }
     @media (max-width: 768px) {
   .hero .second-box .swiper {
-    overflow: hidden; // megakadályozza, hogy kilógjon
+    overflow: hidden; 
   }
 
   .hero .second-box .swiper-slide {
-    width: 100% !important; // minden slide teljes szélesség
+    width: 100% !important;
   }
 }
   }
