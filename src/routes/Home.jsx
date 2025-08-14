@@ -6,7 +6,7 @@ import HomeBottomSwiper from "../components/HomeBottomSwiper";
 
 export default function Home() {
   return (
-    <div>
+    <div className="home-page">
       <Hero />
       <HomeItems />
       <SalerHero />
