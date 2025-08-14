@@ -82,6 +82,15 @@
         margin-bottom: 5rem;  
         }
     }
+    @media (max-width: 768px) {
+  .hero .second-box .swiper {
+    overflow: hidden; // megakadályozza, hogy kilógjon
+  }
+
+  .hero .second-box .swiper-slide {
+    width: 100% !important; // minden slide teljes szélesség
+  }
+}
   }
 
   //HomeItems
