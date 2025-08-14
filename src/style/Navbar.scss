@@ -1,0 +1,148 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--text-light);
+  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, 0.4);
+
+  .marquee {
+    width: 100%;
+    background: #222;
+
+    p {
+      padding: 5px;
+      color: white;
+      font-size: 0.9rem;
+    }
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .first-box{
+      padding-top: 15px;
+    }
+    .first-box,
+    .second-box,
+    .third-box {
+      width: 100%;
+      display: flex;
+      gap: 20px;
+      
+
+      .nav-link {
+        position: relative;
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 0.9rem;
+        transition: 0.3s ease-in-out;
+        border-right: 1px solid #e0dede;
+        padding-right: 10px;
+
+        i {
+          font-size: 1.2rem;
+        }
+
+        &:hover {
+          color: var(--text-mid);
+        }
+
+        .wishlist {
+          position: relative;
+        }
+
+        .number {
+          position: absolute;
+          top: -12px;
+          right: 0;
+          background: crimson;
+          padding: 2px;
+          font-size: 0.6rem;
+          border-radius: 100%;
+          color: var(--text-light);
+        }
+      }
+    }
+
+    .first-box {
+      justify-content: flex-end;
+      padding-right: 40px;
+    }
+
+    .second-box,
+    .third-box {
+      justify-content: center;
+      margin-bottom: 1em;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  .menu {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #222;
+    z-index: 9999;
+  }
+
+  //RESPONSIVE
+  @media (max-width: 768px) {
+    .menu {
+      display: block;
+      width: auto;
+      justify-content: unset;
+    }
+
+    nav {
+      position: absolute;
+      top: 25px;
+      left: 0;
+      width: 100%;
+      background: white;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+      display: none;
+      z-index: 1000;
+
+      &.open {
+        display: flex;
+      }
+      
+      .second-box{
+        display: none;
+      }
+      #todo{
+        display: none;
+      }
+
+      .first-box,
+      .third-box {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+
+        .nav-link {
+          padding: 10px 0;
+          font-size: 1rem;
+          border: none;
+        }
+
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}

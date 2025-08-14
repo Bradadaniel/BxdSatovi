@@ -1,0 +1,222 @@
+.hero{
+    max-width: 1400px;
+    margin: 4rem auto 0;
+    display: flex;
+    align-items: center;
+
+    .first-box{
+        width: 30%;
+        text-align: left;
+        color: var(--text-color);
+        margin-left: 1rem;
+        h1{
+            font-family: "Pinyon Script", cursive;
+            color: var(--text-mid);
+            font-size: 8rem;
+        }
+        h3{
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+        }
+        p{
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        a{
+            color: var(--text-color);
+            padding: 5px;
+            font-size: 1rem;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+    .second-box{
+        width: 70%;
+        padding: 0;
+        justify-content: center;
+        .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .slide-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    img {
+      width: 100%;
+      max-height: 600px;
+      height: auto;
+      object-fit: contain;
+      transform: scale(0.8);
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: var(--text-color);
+    }
+      &.active {
+    img {
+      transform: scale(1);
+    }
+  }
+  }
+}
+//RESPONSIVE
+    @media (max-width: 1024px){ 
+        flex-direction: column;
+        .first-box{
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+          padding: 0.5rem 2rem;
+        }
+        .second-box{
+          width: 100%;
+          
+        margin-bottom: 5rem;  
+        }
+    }
+  }
+
+  //HomeItems
+  .title{
+    width: 1400px;
+    margin: 0 auto;
+    font-family: "Pinyon Script", cursive;
+    font-size: 3rem;
+    padding: 2rem 0 0 2rem;
+  }
+  .homeItems{
+    max-width: 1400px;
+    margin: 2rem auto 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 10px;
+
+      @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+      }
+
+    .item{
+      padding: 20px;
+      text-align: center;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+      box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+      transition: .2s ease-in-out;
+      cursor: pointer;
+      &:hover{
+        box-shadow: 8px 12px 20px 0px rgba(0, 0, 0, 0.5);
+      }
+      .img{
+        position: relative;
+        img{
+          width: 100%;
+        }
+        .heart{
+          position: absolute;
+          top: 0;
+          font-size: 2rem;
+          color: #888;
+          cursor: pointer;
+          transition: .3s ease-in-out;
+          &:hover{
+            color: crimson;
+          }
+        }
+      }
+      .desc{
+        text-align: left;
+        padding-left: 1rem;
+        h3{
+          color: var(--text-mid);
+          text-transform: uppercase;
+        }
+        h5{
+          color: var(--text-color);
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+ //SalerHero
+ .salerHero{
+  max-width: 1400px;
+  margin: 5rem auto 2rem auto;
+  padding: 2rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background: #e6e6e6;
+  line-height: 2;
+
+  h2{
+    font-family: "Pinyon Script", cursive;
+    font-size: 3rem;
+    color: var(--text-mid);
+  }
+  h3{
+    text-transform: uppercase;
+  }
+  p{
+    color: var(--text-mid);
+    font-size: .9rem;
+  }
+  a{
+    margin-top: 1rem;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--text-light);
+    background: var(--text-color);
+  }
+ }
+ //HomeBottomSwiper
+.homeBottomSwiper {
+  width: 100%;
+  max-width: 1400px;
+  margin: 3rem auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  gap: 1rem;
+
+  .box {
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 300px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .img {
+      font-size: 8rem;
+      color: var(--text-mid);
+      margin-bottom: 1rem;
+    }
+
+    .desc {
+      font-size: 1rem;
+      color: var(--text-mid);
+      font-weight: 300;
+    }
+  }
+}
