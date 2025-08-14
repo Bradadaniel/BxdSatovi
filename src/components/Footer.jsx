@@ -55,13 +55,13 @@ export default function Footer() {
         <div className="contact">
           <h3>Kontakt</h3>
           <ul>
+            {/*
             <li>
               <a href="tel:+3812766605">Telefon: +381 61 276 6605</a>
             </li>
+            */}
             <li>
-              <a href="mailto:danibrada29@gmail.com">
-                Email: danibrada29@gmail.com
-              </a>
+              <a href="mailto:danibrada29@gmail.com">Email: xxx</a>
             </li>
             <div className="icons">
               <li>
