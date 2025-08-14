@@ -1,14 +1,34 @@
 import BlogComponent from "./BlogComponent";
 import watches from "../img/watches.jpg";
 import code from "../img/code.jpg";
+import { GridLoader } from "react-spinners";
+import React, { useState, useEffect } from "react";
 
 export default function BlogContent() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div
+        className="loader"
+        style={{ textAlign: "center", marginTop: "2rem" }}
+      >
+        <GridLoader size={20} color="#222" />
+      </div>
+    );
+  }
+
   return (
     <div className="blog-content">
-      <div className="title">
+      <div className="title" data-aos="fade-left">
         <h1>Blog Sajt</h1>
       </div>
-      <div className="box">
+      <div className="box" data-aos="fade-up">
         <BlogComponent
           date="12.08.2025"
           img={code}

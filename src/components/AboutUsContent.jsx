@@ -1,9 +1,28 @@
-import React from "react";
 import about1 from "../img/aboutus1.jpg";
 import about2 from "../img/aboutus2.jpg";
 import AboutBox from "./AboutBox";
+import { GridLoader } from "react-spinners";
+import React, { useState, useEffect } from "react";
 
 export default function AboutUsContent() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div
+        className="loader"
+        style={{ textAlign: "center", marginTop: "2rem" }}
+      >
+        <GridLoader size={20} color="#222" />
+      </div>
+    );
+  }
+
   return (
     <div className="about-us">
       <AboutBox
