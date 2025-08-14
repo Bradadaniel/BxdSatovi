@@ -65,7 +65,7 @@ export default function Footer() {
             </li>
             <div className="icons">
               <li>
-                <a href="/">
+                <a href="https://www.instagram.com/bxd_satovi/">
                   <i className="ri-instagram-line"></i>
                 </a>
               </li>

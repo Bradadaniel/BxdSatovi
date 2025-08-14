@@ -162,7 +162,7 @@ export default function ProductListMUI() {
               <div className="price-buy">
                 <h4>{selectedProduct.price} RSD</h4>
                 <a
-                  href="/"
+                  href="https://www.instagram.com/bxd_satovi/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="buy-btn"
