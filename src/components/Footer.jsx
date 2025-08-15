@@ -61,7 +61,9 @@ export default function Footer() {
             </li>
             */}
             <li>
-              <a href="mailto:danibrada29@gmail.com">Email: xxx</a>
+              <a href="mailto:bxdsatovi@gmail.com">
+                Email: bxdsatovi@gmail.com
+              </a>
             </li>
             <div className="icons">
               <li>
@@ -75,7 +77,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/">
+                <a href="mailto:bxdsatovi@gmail.com">
                   <i className="ri-mail-line"></i>
                 </a>
               </li>
