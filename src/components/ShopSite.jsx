@@ -118,8 +118,7 @@ export default function ProductListMUI() {
             </div>
             <div className="right-side">
               <h2>{selectedProduct.subtitle}</h2>
-              <p>{selectedProduct.description}</p>
-
+              <h4 className="price">{selectedProduct.price},00 RSD</h4>
               <div className="properties">
                 <div className="property">
                   <i className="ri-copper-coin-line"></i>
@@ -158,9 +157,9 @@ export default function ProductListMUI() {
                   </span>
                 </div>
               </div>
+              <p>{selectedProduct.description}</p>
 
               <div className="price-buy">
-                <h4>{selectedProduct.price} RSD</h4>
                 <a
                   href="https://www.instagram.com/bxd_satovi/"
                   target="_blank"

@@ -1,0 +1,3 @@
+Kártya javitása, home oldalon történő importálása..
+Email form a contact oldalon
+Töltő képernyő shortcodeolása

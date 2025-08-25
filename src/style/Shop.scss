@@ -96,21 +96,17 @@
   max-width: 800px;
   width: 100%;
   position: relative;
-  box-shadow: 0 0 10px rgba(0,0,0,0.25);
-  padding: 0;
-  margin: 0;
   display: flex;
     .left-side{
       width: 50%;
-      background: #e0e8f5;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: center ;
+      
         img{
       width: 100%;
-      height: auto; // magasság automatikus az arány megtartásához
-      max-height: 100%; // ne lépje túl a szülő magasságát
-      object-fit: contain; // a kép nem nyújtva, középre igazítva
+      max-height: 100%;
+      object-fit: contain;
+      box-shadow: 0 0 10px rgba(0,0,0,0.25);
         }
     }
     .right-side{
@@ -119,9 +115,17 @@
       h2{
         color: var(--text-color);
         font-size: 2rem;
-        padding-bottom: 1rem;
+        padding-bottom: 10px;
         border-bottom: 1px solid var(--text-light);
+        font-weight: 500;
       }
+
+      .price{
+        color: var(--text-mid);
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+
       p{
         padding: 1rem 0;
         font-size: .9rem;
@@ -147,35 +151,23 @@
           }
         }
       }
-      h4{
-        margin-top: 1rem;
-        color: var(--text-color);
-        font-size: 1.5rem;
-      }
-      .price-buy {
+.price-buy {
   margin-top: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
   padding-top: 2rem;
-  border-top: 1px solid var(--text-light);
-}
 
-.price-buy h4 {
-  font-size: 1.5rem;
-  color: var(--text-color);
-  font-weight: bold;
-}
-
-.buy-btn {
+  .buy-btn {
   padding: 12px 25px;
-  background: linear-gradient(90deg, #197cb6, #054468);
+  background: var(--text-color);
   color: #fff;
   font-weight: 600;
+  width: 100%;
+  text-align: center;
   font-size: 1rem;
   border: none;
-  border-radius: 30px;
+  border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -183,7 +175,8 @@
 
 .buy-btn:hover {
   transform: scale(1.05);
-  background: linear-gradient(90deg, #4447f3, #0519cc);
+  background: var(--text-mid);
+}
 }
     }
   }
